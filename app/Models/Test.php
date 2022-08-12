@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Test extends Model
+{
+    //
+    protected $table ="tests";
+    protected $guarded = ['id'];
+    protected $fillable = ['id','name','spec','description','image'];
+    protected $hidden =['created_at','updated_at'];
+
+}
